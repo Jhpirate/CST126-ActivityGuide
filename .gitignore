@@ -5,9 +5,6 @@ _notes/
 /bower_components/
 /node_modules/
 /.settings
-<<<<<<< HEAD
 .DS_Store
-=======
->>>>>>> origin/master
 .buildpath
 .project
