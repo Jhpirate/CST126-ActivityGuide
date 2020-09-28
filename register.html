@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
+
+<!--
+Author: Jared Heeringa
+Date: 09/28/2020
+Class: CST126
+Project: Activity #2
+Description: html page with registration form
+-->
+
 <html>
 <head>
 <title>Registration Form</title>
@@ -6,15 +15,23 @@
 
 <body>
 	
-<form action="pageHandler.php" method="post">
+<form action="registerHandler.php" method="post">
   <label for="fName">First Name</label>
   <input type="text" placeholder="Enter your First Name" name="fName"/>
   <br>
   <label for="lName">Last Name</label>
   <input type="text" placeholder="Enter your Last Name" name="lName"/>
   <br>
+  <label for="username">Username</label>
+  <input type="text" placeholder="Enter your username" name="username"/>
+  <br>
+  <label for="password">Password</label>
+  <input type="password" placeholder="Enter your password" name="password"/>
+  <br>
   <input type="submit" value="Submit"/>
 </form>
+	
+	<a href="index.html">Main Menu</a>
 	
 </body>
 </html>

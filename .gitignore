@@ -8,3 +8,5 @@ _notes/
 .DS_Store
 .buildpath
 .project
+/.metadata
+.project
