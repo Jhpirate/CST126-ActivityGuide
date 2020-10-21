@@ -17,7 +17,7 @@ $password = $_POST["password"];
 $shouldAddToDB = true;
 
 // Make sure data is not null/blank. If so, dont execute sql query.
-// Made unnecessary by adding required to html forms
+// Made sort-of unnecessary by adding required to html forms
 if($username == "" || is_null($username)){
 	echo("<p>Username cannot be left blank</p>");
 	$shouldAddToDB = false;
@@ -45,7 +45,7 @@ if($shouldAddToDB == true){
 		$row = $result->fetch_assoc();	// Read the Row from the Query
 		saveUserId($row["ID"]);		// Save User ID in the Session
 
-		include('loginResponse.php'); //php page to show user sucessfully logged in
+		include('loginResponse.php'); //php page to show user successfully logged in
 	} elseif(mysqli_num_rows($result) == 0){
 		//echo("<p><strong>Login Failed</strong></p>");
 		$message = "Login Failed!"; //error message displayed on php page
