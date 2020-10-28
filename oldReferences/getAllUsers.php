@@ -6,7 +6,7 @@ Class: CST126
 Project: Activity #2
 */
 
-$data_link = mysqli_connect("localhost", "root", "root", "activity1");
+$data_link = mysqli_connect("localhost", "root", "root", "cst126_activity_guide");
 $sql_statement = "SELECT * FROM users";
 
 $mysqlconn_query = mysqli_query($data_link, $sql_statement); //establish link and execute query

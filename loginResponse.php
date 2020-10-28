@@ -1,12 +1,9 @@
-<html>
-<head>
-<title>Registration Response</title>
-</head>
+<?php
+require_once("utility.php");
 
-	<body>
-		<h2>Login was successful: <?php echo " " . $username ?></h2>
-		<br/>
-		<a href="whoAmI.php">Who Am I?</a>
-	</body>
-	
-</html>
+$users = getAllUsers();
+include('_getAllUsers.php');
+
+foreach ($users as $user){
+    echo $users[$user];
+}

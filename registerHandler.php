@@ -29,7 +29,7 @@ if ($lastName == "" || is_null($firstName)) {
     $shouldAddToDB = false;
 }
 
-// Databse connection link
+// Database connection link
 $data_link = dbConnect();
 
 //VERY BAD! SQL injection is possible in the current configuration. Don't know how to sanitize input right now, so this is how its going to be.

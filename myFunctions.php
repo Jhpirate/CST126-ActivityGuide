@@ -6,7 +6,7 @@ function dbConnect(){
 	$host = "localhost";
 	$username = "root";
 	$password = "root";
-	$database = "activity1";
+	$database = "cst126_activity_guide";
 		
 	// Database connection
 	$connection = mysqli_connect($host, $username, $password, $database);
@@ -23,7 +23,7 @@ function dbConnect(){
 
 
 // These function were not explained. How do they work? 
-// I wish the activity guide said, but it just basically encorages us to copy/paste them.
+// I wish the activity guide said, but it just basically encourages us to copy/paste them.
 function saveUserId($id){
 	session_start();
 	$_SESSION["USER_ID"] = $id;
