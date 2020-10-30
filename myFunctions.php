@@ -1,15 +1,23 @@
 <?php
 
 function dbConnect(){
-	
-	//Database credentials
+
+	//Azure SQL DB connection credentials (MySQL In App)
 	$host = "localhost";
-	$username = "root";
-	$password = "root";
+	$username = "azure";
+	$password = "6#vWHD_$";
 	$database = "cst126_activity_guide";
+	$db_port = "54916";
+
+
+//	//local MAMP Database credentials
+//	$host = "localhost";
+//	$username = "root";
+//	$password = "root";
+//	$database = "cst126_activity_guide";
 		
 	// Database connection
-	$connection = mysqli_connect($host, $username, $password, $database);
+	$connection = mysqli_connect($host, $username, $password, $database, $db_port);
 	
 	// Check DB connection
 	if (mysqli_connect_errno()){
