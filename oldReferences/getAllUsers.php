@@ -17,6 +17,3 @@ while($result = mysqli_fetch_array($mysqlconn_query)){
 
 
 mysqli_close($data_link);
-
-
-?>
